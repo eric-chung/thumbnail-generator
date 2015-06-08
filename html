@@ -1,0 +1,153 @@
+<html>
+<title>Thumbnail Generator</title>
+<body>
+    
+<form name="data">
+<table border="1" cellspacing="2" cellpadding="5">
+    <caption>Thumbnail Image Generator</caption>
+    <!--header row-->
+    <tr>
+        <th></th>
+        <th>Empty</th>
+        <th>Geo</th>
+        <th>Time</th>
+        <th>Measures</th>
+        <th>Name</th>
+    </tr>
+    <!--ROWS-->
+    <tr id="rows">
+        <th>Rows</th>
+        <th colspan="5"></th>
+    </tr>
+    <!--first row-->
+    <tr>
+        <th>1</th>
+        <th>
+            <input type="radio" name="row1" value="empty" onchange=disableText("row1")>
+        </th>
+        <th>
+            <input type="radio" name="row1" value="geo" onchange=disableText("row1")>
+        </th>
+        <th>
+            <input type="radio" name="row1" value="time" onchange=disableText("row1")>
+        </th>
+        <th>
+            <input type="radio" name="row1" value="measures" onchange=disableText("row1")>
+        </th>
+        <th>
+        	<input type="radio" name="row1" value="name" onchange=enableText("row1")>
+            <input type="text" name="row1" id="row1" disabled = "true">
+        </th>
+    </tr>
+    <!--second row-->
+    <tr>
+        <th>2</th>
+        <th>
+            <input type="radio" name="row2" value="empty" onchange=disableText("row2")>
+        </th>
+        <th>
+            <input type="radio" name="row2" value="geo" onchange=disableText("row2")>
+        </th>
+        <th>
+            <input type="radio" name="row2" value="time" onchange=disableText("row2")>
+        </th>
+        <th>
+            <input type="radio" name="row2" value="measures" onchange=disableText("row2")>
+        </th>
+        <th>
+        	<input type="radio" name="row2" value="name" onchange=enableText("row2")>
+            <input type="text" name="row2" id="row2" disabled = "true">
+        </th>
+    </tr>
+    <!--third row-->
+    <tr>
+        <th>3</th>
+        <th>
+            <input type="radio" name="row3" value="empty" onchange=disableText("row3")>
+        </th>
+        <th>
+            <input type="radio" name="row3" value="geo" onchange=disableText("row3")>
+        </th>
+        <th>
+            <input type="radio" name="row3" value="time" onchange=disableText("row3")>
+        </th>
+        <th>
+            <input type="radio" name="row3" value="measures" onchange=disableText("row3")>
+        </th>
+        <th>
+        	<input type="radio" name="row3" value="name" onchange=enableText("row3")>
+            <input type="text" name="row3" id="row3" disabled = "true">
+        </th>
+    </tr>
+    <!--COLUMNS-->
+    <tr id="columns">
+        <th>Columns</th>
+        <th colspan="5"></th>
+    </tr>
+    <!--first column-->
+    <tr>
+        <th>1</th>
+        <th>
+            <input type="radio" name="col1" value="empty" onchange=disableText("col1")>
+        </th>
+        <th>
+            <input type="radio" name="col1" value="geo" onchange=disableText("col1")>
+        </th>
+        <th>
+            <input type="radio" name="col1" value="time" onchange=disableText("col1")>
+        </th>
+        <th>
+            <input type="radio" name="col1" value="measures" onchange=disableText("col1")>
+        </th>
+        <th>
+        	<input type="radio" name="col1" value="name" onchange=enableText("col1")>
+            <input type="text" name="col1" id="col1" disabled = "true">
+        </th>
+    </tr>
+    <!--second row-->
+    <tr>
+        <th>2</th>
+        <th>
+            <input type="radio" name="col2" value="empty" onchange=disableText("col2")>
+        </th>
+        <th>
+            <input type="radio" name="col2" value="geo" onchange=disableText("col2")>
+        </th>
+        <th>
+            <input type="radio" name="col2" value="time" onchange=disableText("col2")>
+        </th>
+        <th>
+            <input type="radio" name="col2" value="measures" onchange=disableText("col2")>
+        </th>
+        <th>
+        	<input type="radio" name="col2" value="name" onchange=enableText("col2")>
+            <input type="text" name="col2" id="col2" disabled = "true">
+        </th>
+    </tr>
+    <!--third row-->
+    <tr>
+        <th>3</th>
+        <th>
+            <input type="radio" name="col3" value="empty" onchange=disableText("col3")>
+        </th>
+        <th>
+            <input type="radio" name="col3" value="geo" onchange=disableText("col3")>
+        </th>
+        <th>
+            <input type="radio" name="col3" value="time" onchange=disableText("col3")>
+        </th>
+        <th>
+            <input type="radio" name="col3" value="measures" onchange=disableText("col3")>
+        </th>
+        <th>
+        	<input type="radio" name="col3" value="name" onchange=enableText("col3")>
+            <input type="text" name="col3" id="col3" disabled = "true">
+        </th>
+    </tr>
+</table>
+<br>
+<input type="button" value="Make thumbnail" onclick="createImage()"/>
+</form>
+
+</body>
+</html>
